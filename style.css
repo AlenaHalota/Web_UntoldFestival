@@ -1,0 +1,235 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--yellow: #ffbb33;
+	--grey: #1a1a1a;
+} 
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+/*********************************************** HEADER **********************************************/
+.header {
+	background-image: url("festival2.jpg");
+	height: 550px;
+}
+
+.radio {
+	width: 200px;
+	height: 35px;
+	background-color: var(--yellow);
+	border-radius: 15px;
+	transition: 0.3s;
+}
+
+.radio:hover {
+	height: 90px;
+}
+
+.radio-button {
+	font-size: 2.1rem;
+	padding-top: 4px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+}
+
+.radio-p {
+	font-size: 1.1rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding-top: 5px;
+}
+
+.header-container {
+	display: flex;
+	justify-content: space-between;
+	margin: 0px 50px;
+	padding-top: 10px;
+	padding-bottom: 100px;
+	position: relative;
+}
+
+.header-text {
+	padding-left: 80px;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.header-p {
+	color: #ffbb33;
+	margin-left: -170px;
+}
+
+.header-h1 {
+	font-family: 'Anton', sans-serif;
+	letter-spacing: 7px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 3rem;
+	text-transform: uppercase;
+}
+
+.main-h1 {
+	font-size: 2.5rem;
+	font-weight: bold;
+	padding-bottom: 30px;
+}
+
+.main-h2 {
+	font-size: 2rem;
+}
+
+.menu-bar {
+	font-size: 2rem;
+	position: relative;
+	z-index: 99;
+	cursor: pointer;
+}
+
+.menu-bar::before {
+	content: '';
+	width: 45px;
+	height: 45px;
+	background-color: var(--yellow);
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	left: -7px;
+	z-index: -1;
+	transition: 0.3s;
+}
+
+.menu-bar:hover::before {
+	box-shadow: 0 5px 10px 2px #ffff66;
+}
+
+.menu-options {
+	display: none;
+	font-size: 1.8rem;
+	text-transform: uppercase;
+	color: var(--grey);
+	background-color: var(--yellow);
+	border-radius: 5px;
+	padding: 40px 10px 10px 10px;
+	text-decoration-style: none;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 100;
+}
+
+.btn-close {
+	margin-top: -20px;
+	margin-left: 230px;
+	cursor: pointer;
+}
+
+.menu-options ul {
+	list-style: none;
+}
+
+.menu-options li {
+	padding-bottom: 10px;
+}
+
+.menu-options-down {
+	margin-top: 50px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.lang {
+	font-size: 1rem;
+	padding-top: 7px;
+}
+
+/*********************************************** END OF HEADER **********************************************/
+/*********************************************** MAIN **********************************************/
+.main {
+	background-color: #3d0066;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 10px;
+	justify-content: center;
+	text-transform: uppercase;
+	box-shadow: 0px -8px 7px #3d0066;  
+}
+
+.main-box {
+	min-height: 550px;
+	border-radius: 5px;
+	margin: -100px 50px 10px 50px;
+}
+
+.black:hover {
+	box-shadow: 2px 5px 10px 10px var(--yellow);
+}
+
+.black {
+	border-radius: 5px;
+	background: var(--grey);
+	min-height: 300px;
+	transition: 0.3s;
+}
+
+.white {
+	background: white;
+	padding-left: 50px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.white-p {
+	padding-left: 0px;
+}
+
+.yellow {
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	background: var(--yellow);
+	display: flex;
+	justify-content: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.black-logo {
+	padding-top: 50px;
+	font-size: 4rem;
+	display: block;
+	transform: translateX(45%); 
+}
+
+.white-p, .yellow-p {
+	font-size: 0.8rem;
+} 
+
+/*********************************************** END OF MAIN **********************************************/
+/*********************************************** FOOTER **********************************************/
+.footer {
+	background-color: var(--yellow);
+}
+
+.footer-h3 {
+	padding: 30px 0px 30px 50px;
+}
+
+.footer-container ul, p {
+	padding-left: 50px;
+}
+
+.footer-container ul {
+	padding-bottom: 20px; 
+}
+
+.footer-container p {
+	padding-bottom: 10px;
+}
+/*********************************************** END OF FOOTER **********************************************/
